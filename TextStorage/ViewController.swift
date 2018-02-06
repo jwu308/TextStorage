@@ -21,5 +21,7 @@ class ViewController: UIViewController {
     }
 
 
+    @IBOutlet weak var uploadText: UIButton!
+    @IBOutlet weak var showText: UIButton!
 }
 
