@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1667880BF1DB7577D42D0757 /* Pods_TextStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394F29F7EAC07A9DC1341D0B /* Pods_TextStorage.framework */; };
 		A197E276202A6BA4004B5BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A197E275202A6BA4004B5BEC /* AppDelegate.swift */; };
 		A197E278202A6BA4004B5BEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A197E277202A6BA4004B5BEC /* ViewController.swift */; };
 		A197E27B202A6BA5004B5BEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A197E279202A6BA5004B5BEC /* Main.storyboard */; };
 		A197E27D202A6BA5004B5BEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A197E27C202A6BA5004B5BEC /* Assets.xcassets */; };
 		A197E280202A6BA5004B5BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A197E27E202A6BA5004B5BEC /* LaunchScreen.storyboard */; };
+		BB379A29202B4FDA00A3752D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB379A28202B4FDA00A3752D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		394F29F7EAC07A9DC1341D0B /* Pods_TextStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C67FBD4E98810E0A3C3B40F /* Pods-TextStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextStorage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextStorage/Pods-TextStorage.debug.xcconfig"; sourceTree = "<group>"; };
 		A197E272202A6BA4004B5BEC /* TextStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A197E275202A6BA4004B5BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A197E277202A6BA4004B5BEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		A197E27C202A6BA5004B5BEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A197E27F202A6BA5004B5BEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A197E281202A6BA5004B5BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB379A28202B4FDA00A3752D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E2B18A87E04BE67F87CBE32E /* Pods-TextStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextStorage.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextStorage/Pods-TextStorage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1667880BF1DB7577D42D0757 /* Pods_TextStorage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54D2A14FD2AA74646CEFF2EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C67FBD4E98810E0A3C3B40F /* Pods-TextStorage.debug.xcconfig */,
+				E2B18A87E04BE67F87CBE32E /* Pods-TextStorage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6CBE5B6ACD4B8349CEDA340E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				394F29F7EAC07A9DC1341D0B /* Pods_TextStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A197E269202A6BA4004B5BEC = {
 			isa = PBXGroup;
 			children = (
 				A197E274202A6BA4004B5BEC /* TextStorage */,
 				A197E273202A6BA4004B5BEC /* Products */,
+				54D2A14FD2AA74646CEFF2EA /* Pods */,
+				6CBE5B6ACD4B8349CEDA340E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				A197E27C202A6BA5004B5BEC /* Assets.xcassets */,
 				A197E27E202A6BA5004B5BEC /* LaunchScreen.storyboard */,
 				A197E281202A6BA5004B5BEC /* Info.plist */,
+				BB379A28202B4FDA00A3752D /* GoogleService-Info.plist */,
 			);
 			path = TextStorage;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A197E284202A6BA5004B5BEC /* Build configuration list for PBXNativeTarget "TextStorage" */;
 			buildPhases = (
+				8E8A7F61835257EF200D56A9 /* [CP] Check Pods Manifest.lock */,
 				A197E26E202A6BA4004B5BEC /* Sources */,
 				A197E26F202A6BA4004B5BEC /* Frameworks */,
 				A197E270202A6BA4004B5BEC /* Resources */,
+				7B71BB3964B4F61440806A1C /* [CP] Embed Pods Frameworks */,
+				E9FED873136D1F79210F928E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,78 @@
 			buildActionMask = 2147483647;
 			files = (
 				A197E280202A6BA5004B5BEC /* LaunchScreen.storyboard in Resources */,
+				BB379A29202B4FDA00A3752D /* GoogleService-Info.plist in Resources */,
 				A197E27D202A6BA5004B5BEC /* Assets.xcassets in Resources */,
 				A197E27B202A6BA5004B5BEC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B71BB3964B4F61440806A1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TextStorage/Pods-TextStorage-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextStorage/Pods-TextStorage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E8A7F61835257EF200D56A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextStorage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9FED873136D1F79210F928E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TextStorage/Pods-TextStorage-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextStorage/Pods-TextStorage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A197E26E202A6BA4004B5BEC /* Sources */ = {
@@ -272,6 +368,7 @@
 		};
 		A197E285202A6BA5004B5BEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C67FBD4E98810E0A3C3B40F /* Pods-TextStorage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +383,7 @@
 		};
 		A197E286202A6BA5004B5BEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2B18A87E04BE67F87CBE32E /* Pods-TextStorage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

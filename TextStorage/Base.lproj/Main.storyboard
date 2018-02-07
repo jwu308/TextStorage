@@ -18,44 +18,123 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oDQ-F4-auP">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oDQ-F4-auP">
                                 <rect key="frame" x="70" y="145" width="235" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter text to store in database:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3z-dR-9Rt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter text to store in database:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3z-dR-9Rt">
                                 <rect key="frame" x="70" y="116" width="235" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d79-rX-hIY">
-                                <rect key="frame" x="75" y="318" width="225" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Click to show text from database"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;Replace with database text&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sy2-TI-V3y">
-                                <rect key="frame" x="73" y="356" width="228" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CON-5v-eit">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CON-5v-eit">
                                 <rect key="frame" x="122" y="183" width="130" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Upload text"/>
+                                <connections>
+                                    <action selector="uploadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QDu-Ua-owd"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gHj-ND-cem">
+                                <rect key="frame" x="72" y="320" width="230" height="48"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Dc1-Z9-YZY"/>
+                                    <constraint firstAttribute="width" constant="230" id="oab-4l-NFe"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bpx-hF-iaq">
+                                <rect key="frame" x="72" y="376" width="230" height="48"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="5cv-OG-A24"/>
+                                    <constraint firstAttribute="width" constant="230" id="Pwq-IG-3Vm"/>
+                                </constraints>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oi-FC-i0X" customClass="GIDSignInButton">
+                                <rect key="frame" x="70" y="506" width="230" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="2Hv-yc-7Jx"/>
+                                    <constraint firstAttribute="height" constant="48" id="vDJ-Xp-jZu"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="signin:" destination="BYZ-38-t0r" eventType="valueChanged" id="O5L-72-HnD"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTw-JA-CX8">
+                                <rect key="frame" x="72" y="432" width="230" height="48"/>
+                                <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="jbv-VG-1T0"/>
+                                    <constraint firstAttribute="width" constant="230" id="uDp-rh-Q6g"/>
+                                </constraints>
+                                <state key="normal" title="login">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="register:" destination="BYZ-38-t0r" eventType="touchUpInside" id="81Q-ps-keN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Siq-k7-pwJ">
+                                <rect key="frame" x="70" y="221" width="230" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="A1U-zs-e6M"/>
+                                    <constraint firstAttribute="height" constant="30" id="dEK-eu-aLd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oDQ-F4-auP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="0Y4-es-WVT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0oi-FC-i0X" secondAttribute="trailing" constant="75" id="1Ne-N8-l3c"/>
+                            <constraint firstItem="0oi-FC-i0X" firstAttribute="top" secondItem="oTw-JA-CX8" secondAttribute="bottom" constant="26" id="4Wo-pB-QHs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Siq-k7-pwJ" secondAttribute="trailing" constant="75" id="4uh-Ic-lSR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oTw-JA-CX8" secondAttribute="trailing" constant="73" id="CMt-aR-ztp"/>
+                            <constraint firstItem="A3z-dR-9Rt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="CWC-ar-vcw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gHj-ND-cem" secondAttribute="trailing" constant="73" id="GAI-g0-vMK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Siq-k7-pwJ" secondAttribute="trailing" constant="75" id="KOX-Qe-sI7"/>
+                            <constraint firstItem="oDQ-F4-auP" firstAttribute="top" secondItem="A3z-dR-9Rt" secondAttribute="bottom" constant="8" id="RFL-df-bXt"/>
+                            <constraint firstItem="CON-5v-eit" firstAttribute="top" secondItem="oDQ-F4-auP" secondAttribute="bottom" constant="8" id="SeL-Zr-IpO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CON-5v-eit" secondAttribute="trailing" constant="123" id="T2b-tn-VU8"/>
+                            <constraint firstItem="Siq-k7-pwJ" firstAttribute="top" secondItem="CON-5v-eit" secondAttribute="bottom" constant="8" id="Vq3-a4-7zB"/>
+                            <constraint firstItem="Siq-k7-pwJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="WAQ-Pt-SJ8"/>
+                            <constraint firstItem="oTw-JA-CX8" firstAttribute="top" secondItem="Bpx-hF-iaq" secondAttribute="bottom" constant="8" id="WAp-k9-dc2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A3z-dR-9Rt" secondAttribute="trailing" constant="70" id="XPI-mv-ca2"/>
+                            <constraint firstItem="Siq-k7-pwJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="YLh-GD-QJ3"/>
+                            <constraint firstItem="A3z-dR-9Rt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="96" id="aLO-z1-zcM"/>
+                            <constraint firstItem="Bpx-hF-iaq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="ba5-8j-NAE"/>
+                            <constraint firstItem="0oi-FC-i0X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="cIj-42-ofP"/>
+                            <constraint firstItem="Siq-k7-pwJ" firstAttribute="top" secondItem="CON-5v-eit" secondAttribute="bottom" constant="8" id="fK1-nb-mLm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bpx-hF-iaq" secondAttribute="trailing" constant="73" id="fjn-zT-zeW"/>
+                            <constraint firstItem="Bpx-hF-iaq" firstAttribute="top" secondItem="gHj-ND-cem" secondAttribute="bottom" constant="8" id="hDN-cT-FJI"/>
+                            <constraint firstItem="gHj-ND-cem" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="mKA-Fq-v1l"/>
+                            <constraint firstItem="oTw-JA-CX8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="moX-yk-RDk"/>
+                            <constraint firstItem="CON-5v-eit" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="122" id="wfr-02-9VH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oDQ-F4-auP" secondAttribute="trailing" constant="70" id="ynS-Km-gCk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0oi-FC-i0X" secondAttribute="bottom" constant="113" id="z76-qS-xaY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <connections>
-                        <outlet property="databaseText" destination="Sy2-TI-V3y" id="aIn-5h-FbI"/>
-                        <outlet property="showText" destination="d79-rX-hIY" id="V5P-c4-LVY"/>
+                        <outlet property="display" destination="Siq-k7-pwJ" id="5lA-ol-Fya"/>
+                        <outlet property="email" destination="gHj-ND-cem" id="ggJ-0S-Asg"/>
+                        <outlet property="inputField" destination="oDQ-F4-auP" id="P5o-Ku-o0h"/>
+                        <outlet property="password" destination="Bpx-hF-iaq" id="czh-14-puI"/>
                         <outlet property="uploadText" destination="CON-5v-eit" id="Oq9-XP-rUO"/>
                     </connections>
                 </viewController>
